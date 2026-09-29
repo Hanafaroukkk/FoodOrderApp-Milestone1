@@ -18,6 +18,7 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(R.layout.activity_sign_up)
 
         auth = FirebaseAuth.getInstance()
+        val role = intent.getStringExtra("role") ?: "buyer"
 
         val etName = findViewById<EditText>(R.id.etName)
         val etPhone = findViewById<EditText>(R.id.etPhone)
@@ -43,7 +44,8 @@ class SignUpActivity : AppCompatActivity() {
                     val userMap = mapOf(
                         "name" to name,
                         "phone" to phone,
-                        "email" to email
+                        "email" to email ,
+                        "role" to role
                     )
 
                     FirebaseDatabase.getInstance("https://signaling-project-76d29-default-rtdb.firebaseio.com")

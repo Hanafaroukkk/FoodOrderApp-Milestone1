@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome! Are you a Buyer or a Seller?"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <Button
+        android:id="@+id/btnBuyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I'm a Buyer"/>
+
+    <Button
+        android:id="@+id/btnSeller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I'm a Seller"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tvGoToSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Sign In"
+        android:textColor="#6200EE"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

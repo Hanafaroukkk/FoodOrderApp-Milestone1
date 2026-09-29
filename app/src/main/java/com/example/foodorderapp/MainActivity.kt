@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         if (currentUser != null) {
             startActivity(Intent(this, ProfileActivity::class.java))
         } else {
-            startActivity(Intent(this, SignInActivity::class.java))
+            startActivity(Intent(this, WelcomeActivity::class.java))
         }
         finish()
         enableEdgeToEdge()
