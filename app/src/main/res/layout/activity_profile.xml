@@ -27,6 +27,29 @@
         android:hint="Phone Number"
         android:inputType="phone"
         android:layout_marginTop="12dp"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/etCurrentPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current Password (required to change email/password)"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password (leave blank to keep current)"
+        android:inputType="textPassword"
+        android:layout_marginTop="12dp"/>
 
     <Button
         android:id="@+id/btnSave"
